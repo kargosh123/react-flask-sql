@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/atierno/miniforge3/envs/flask-backend
+exec_prefix=/Users/atierno/miniforge3/envs/flask-backend
+libdir=/Users/atierno/miniforge3/envs/flask-backend/lib
+includedir=/Users/atierno/miniforge3/envs/flask-backend/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.6
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
